@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | FitCore Studio</title>
+  <meta name="description" content="Learn about FitCore Studio, our mission, values, and the passionate team helping you achieve your fitness goals." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+    body { font-family: Roboto, sans-serif; }
+    h1, h2, h3, h4 { font-family: Oswald, serif; }
+    .animate-fadeInUp { animation: fadeInUp 0.6s ease-out forwards; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="antialiased" style="scroll-behavior: smooth;">
+  <header>
+    <nav class="bg-black text-white sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="index.html" class="text-2xl font-bold">FitCore Studio</a>
+          <div class="hidden md:flex space-x-6 text-sm">
+            <a href="index.html" class="hover:text-gray-300">Home</a>
+            <a href="about.html" class="hover:text-gray-300">About</a>
+            <a href="contact.html" class="hover:text-gray-300">Contact</a>
+          </div>
+          <div class="md:hidden"><button id="mobile-menu-button" aria-label="Open menu" class="text-white"><i class="fas fa-bars"></i></button></div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden bg-black">
+        <a href="index.html" class="block px-4 py-2 text-sm">Home</a>
+        <a href="about.html" class="block px-4 py-2 text-sm">About</a>
+        <a href="contact.html" class="block px-4 py-2 text-sm">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero with image and intro -->
+    <section class="py-20 bg-gray-900 text-white" style="background-image: url('https://images.unsplash.com/photo-1554284126-3e0d8fbd9a15?auto=format&fit=crop&w=1400&q=80'); background-size: cover; background-position: center;">
+      <div class="max-w-3xl mx-auto text-center px-4">
+        <h1 class="text-4xl font-bold mb-4">Our Story</h1>
+        <p class="text-lg text-gray-200 mb-6">From a passionate start to a thriving community, FitCore Studio is built on dedication to health, discipline, and supportive coaching. We believe fitness should be inclusive, sustainable, and empowering for every body. Our journey began with a simple goal: help people discover strength they didn’t know they had and create routines that stick for life.</p>
+        <p class="text-lg text-gray-200">Over the years, we’ve evolved into a modern fitness hub with expert trainers, state-of-the-art equipment, and a welcoming culture where accountability meets encouragement. We’re more than a gym. We’re your partner in health—every step of the way.</p>
+      </div>
+    </section>
+
+    <!-- Our Values & Team -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="animate-fadeInUp">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">What Drives Us</h2>
+          <p class="text-gray-700 mb-4">At FitCore Studio, we prioritize consistency, safety, and progress. Our approach combines science-backed training with real-world practicality so you can build habits that last. We emphasize form, mobility, recovery, and mindset, helping clients move better, feel stronger, and stay motivated.</p>
+          <p class="text-gray-700">Our trainers are Nationally Certified, with specializations in strength conditioning, endurance, and corrective exercise. We tailor programs to your goals—whether you’re preparing for a competition, recovering from an injury, or simply aiming to feel your best every day.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Team of trainers at FitCore Studio" class="rounded-lg shadow-lg w-full h-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet the Team (short) -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-6">
+          <h2 class="text-3xl font-bold text-gray-800">Meet Our Team</h2>
+          <p class="text-gray-600">Certified trainers dedicated to your growth and safety.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg p-4 shadow-lg text-center">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" alt="Trainer Anna" class="w-24 h-24 mx-auto rounded-full" />
+            <div class="mt-2 font-semibold">Anna Lee</div>
+            <div class="text-sm text-gray-600">Strength & Conditioning Coach</div>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-lg text-center">
+            <img src="https://images.unsplash.com/photo-1544005316-0c8c2a8a8a88?auto=format&fit=crop&w=300&q=80" alt="Trainer Marco" class="w-24 h-24 mx-auto rounded-full" />
+            <div class="mt-2 font-semibold">Marco Diaz</div>
+            <div class="text-sm text-gray-600">Performance Specialist</div>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-lg text-center">
+            <img src="https://images.unsplash.com/photo-1544005316-1b1a9d9a1b4e?auto=format&fit=crop&w=300&q=80" alt="Trainer Priya" class="w-24 h-24 mx-auto rounded-full" />
+            <div class="mt-2 font-semibold">Priya Kapoor</div>
+            <div class="text-sm text-gray-600">Mobility & Injury Prevention</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div>
+        <h4 class="font-semibold mb-2">FitCore Studio</h4>
+        <p class="text-sm text-gray-300">Crimson and black branding, modern fitness facility with a focus on sustainable progress and community.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Hours</h4>
+        <p class="text-sm text-gray-300">Mon–Fri: 5:00 AM – 11:00 PM</p>
+        <p class="text-sm text-gray-300">Sat–Sun: 6:00 AM – 9:00 PM</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Contact</h4>
+        <p class="text-sm text-gray-300">123 Wellness Ave, City, ST 12345</p>
+        <p class="text-sm text-gray-300">Phone: (555) 012-3456</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Stay Connected</h4>
+        <div class="flex space-x-3 text-gray-300">
+          <a href="#" aria-label="Facebook" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (btn && mobileMenu) {
+      btn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    }
+    // Active link highlight
+    const currentPath = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('a[href="index.html"], a[href="about.html"], a[href="contact.html"]').forEach(a => {
+      if (a.getAttribute('href') === currentPath) a.classList.add('text-yellow-300');
+    });
+  </script>
+</body>
+</html>
