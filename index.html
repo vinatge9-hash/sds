@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitCore Studio | Gym & Fitness</title>
+  <meta name="description" content="FitCore Studio offers top-notch gym facilities, expert personal training, group classes, and 24/7 access to help you transform your body and life. Join today!" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+    /* Font pairing for Gym: Headings = Oswald, Body = Roboto */
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Oswald', serif;
+    }
+
+    /* Simple utility tweaks for accessibility consistency */
+    :focus { outline: 2px solid #3B82F6; outline-offset: 2px; }
+
+    /* Minimal keyframe animations (Phase 5 exceptions allowed) */
+    @keyframes fadeInUp { from { opacity:0; transform: translateY(20px);} to { opacity:1; transform: translateY(0);} }
+    .animate-fadeInUp { animation: fadeInUp 0.6s ease-out forwards; }
+  </style>
+</head>
+<body class="antialiased" style="scroll-behavior: smooth;">
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="bg-black text-white sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center space-x-2">
+            <a href="index.html" class="text-2xl font-bold tracking-wide">FitCore Studio</a>
+          </div>
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex space-x-6 text-sm">
+            <a href="index.html" class="hover:text-gray-300 transition-all duration-300">Home</a>
+            <a href="about.html" class="hover:text-gray-300 transition-all duration-300">About</a>
+            <a href="contact.html" class="hover:text-gray-300 transition-all duration-300">Contact</a>
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white" aria-label="Open menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-black">
+        <a href="index.html" class="block px-4 py-2 text-sm hover:bg-gray-800">Home</a>
+        <a href="about.html" class="block px-4 py-2 text-sm hover:bg-gray-800">About</a>
+        <a href="contact.html" class="block px-4 py-2 text-sm hover:bg-gray-800">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Background Image -->
+  <section class="min-h-screen flex items-center justify-center relative bg-cover bg-center bg-no-repeat" 
+           style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1517836357463-d25d7f06b176?auto=format&fit=crop&w=1400&q=80');">
+    <div class="relative z-10 text-center px-4 max-w-3xl">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 animate-fadeInUp">Transform Your Body, Transform Your Life</h1>
+      <p class="text-lg md:text-xl text-white/90 mb-6">Join FitCore Studio for expert coaching, dynamic group classes, and a 24/7 facility to fit your schedule. Real results start here.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="contact.html" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300">Get Started</a>
+        <a href="#services" class="border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/20 transition-all duration-300">View Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section id="services" class="py-16 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">Our Services</h2>
+        <p class="text-lg text-gray-200">What you’ll experience at FitCore Studio</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Personal Training -->
+        <div class="bg-white text-black rounded-lg p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-xl font-bold">Personal Training</h3>
+            <span class="text-xl text-blue-600"><i class="fas fa-dumbbell"></i></span>
+          </div>
+          <p class="text-gray-700">One-on-one coaching tailored to your goals with measurable progress and accountability.</p>
+        </div>
+        <!-- Group Classes -->
+        <div class="bg-white text-black rounded-lg p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-xl font-bold">Group Classes</h3>
+            <span class="text-xl text-red-600"><i class="fas fa-users"></i></span>
+          </div>
+          <p class="text-gray-700">High-energy sessions including HIIT, strength, and cardio in a motivating group setting.</p>
+        </div>
+        <!-- Nutrition Plans -->
+        <div class="bg-white text-black rounded-lg p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-xl font-bold">Nutrition Coaching</h3>
+            <span class="text-xl text-green-600"><i class="fas fa-apple-alt"></i></span>
+          </div>
+          <p class="text-gray-700">Personalized meal plans and guidance to fuel workouts and recovery.</p>
+        </div>
+        <!-- 24/7 Access -->
+        <div class="bg-white text-black rounded-lg p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-xl font-bold">24/7 Access</h3>
+            <span class="text-xl text-indigo-600"><i class="fas fa-clock"></i></span>
+          </div>
+          <p class="text-gray-700">Workout on your schedule with around-the-clock entry and secure access control.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800">What Our Members Say</h2>
+        <p class="text-gray-700">Real stories from people who transformed with FitCore</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white rounded-lg shadow p-6 animate-fadeInUp" style="animation-delay: 0.05s;">
+          <p class="text-gray-700 mb-4">"I joined FitCore for the coaching, and the results speak for themselves. The trainers are supportive and the programs are challenging but sustainable."</p>
+          <div class="flex items-center">
+            <div class="w-10 h-10 rounded-full bg-gray-300 mr-3" aria-label="avatar"></div>
+            <div>
+              <div class="font-semibold">Alex T.</div>
+              <div class="text-sm text-gray-600">Member since 2022</div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="bg-white rounded-lg shadow p-6 animate-fadeInUp" style="animation-delay: 0.1s;">
+          <p class="text-gray-700 mb-4">"The 24/7 access is a game changer. Clean facility, friendly staff, and workouts that fit busy schedules."</p>
+          <div class="flex items-center">
+            <div class="w-10 h-10 rounded-full bg-gray-300 mr-3" aria-label="avatar"></div>
+            <div>
+              <div class="font-semibold">Jordan M.</div>
+              <div class="text-sm text-gray-600">Member since 2020</div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-white rounded-lg shadow p-6 animate-fadeInUp" style="animation-delay: 0.15s;">
+          <p class="text-gray-700 mb-4">"The nutrition coaching helped me understand what to eat to fuel performance. I feel stronger and more energized."</p>
+          <div class="flex items-center">
+            <div class="w-10 h-10 rounded-full bg-gray-300 mr-3" aria-label="avatar"></div>
+            <div>
+              <div class="font-semibold">Priya K.</div>
+              <div class="text-sm text-gray-600">Member since 2021</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About CTA -->
+  <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-2">Ready to start your journey?</h2>
+      <p class="text-gray-700 mb-4">Join FitCore Studio today and unlock a healthier, stronger you.</p>
+      <a href="contact.html" class="inline-block bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition-all duration-300">Join Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="text-lg font-semibold mb-2">FitCore Studio</h4>
+        <p class="text-sm text-gray-300">Crimson + black aesthetic for high-energy workouts. Modern fitness facility with expert guidance.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2">Hours</h4>
+        <p class="text-sm text-gray-300">Mon–Fri: 5:00 AM – 11:00 PM</p>
+        <p class="text-sm text-gray-300">Sat–Sun: 6:00 AM – 9:00 PM</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2">Contact</h4>
+        <p class="text-sm text-gray-300">123 Wellness Ave, City, ST 12345</p>
+        <p class="text-sm text-gray-300">Phone: (555) 012-3456</p>
+        <p class="text-sm text-gray-300">Email: hello@fitcorestudio.example</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="index.html" class="hover:text-white transition-all duration-300">Home</a></li>
+          <li><a href="about.html" class="hover:text-white transition-all duration-300">About</a></li>
+          <li><a href="contact.html" class="hover:text-white transition-all duration-300">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (btn && mobileMenu) {
+      btn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Active page highlight for nav (optional)
+    const currentPath = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('nav a, #mobile-menu a').forEach(a => {
+      if (a.getAttribute('href') === currentPath) {
+        a.classList.add('text-yellow-300');
+      }
+    });
+  </script>
+</body>
+</html>
